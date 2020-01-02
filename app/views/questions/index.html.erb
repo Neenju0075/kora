@@ -1,0 +1,16 @@
+<% content_for :page_title,  "Questions Index" %>
+
+<div class="section">
+  <div class="container">
+    <% @question.each do |q| %>
+      <div class="card">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-3"><%= link_to q.question , q  %></p>
+          </div>
+        </div>
+      </br>
+        </div>
+    <% end %>
+  </div>
+</div>
