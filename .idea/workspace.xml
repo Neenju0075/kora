@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c29c03a-58cd-4725-be17-0bedd1057b76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/questions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +149,9 @@
       <option name="presentableId" value="Default" />
       <updated>1577948770816</updated>
       <workItem from="1577948772003" duration="16315000" />
-      <workItem from="1577979241591" duration="576000" />
+      <workItem from="1577979241591" duration="928000" />
+      <workItem from="1577985208610" duration="136000" />
+      <workItem from="1578031050737" duration="2752000" />
     </task>
     <servers />
   </component>
