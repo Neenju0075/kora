@@ -1,0 +1,27 @@
+<% content_for :page_title,  "Login" %>
+<%= form_tag do %>
+<div class="box">
+    <% if alert %>
+      <p id="alert">
+        <% alert %>
+      </p>
+    <% end %>
+  <div class="form-inputs">
+    <div class="field">
+      <div class="control">
+        <%= label_tag :name, 'Name'%>
+        <%= text_field_tag :name, params[:name],  class: "input" %>
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <%= label_tag :password, 'password'%>
+        <%= text_field_tag :password, params[:password], class: "input", type: "password" %>
+      </div>
+    </div>
+    <div class="form-actions">
+      <%= submit_tag "Login" , class: "button is-primary"%>
+    </div>
+</div>
+</div>
+<% end %>

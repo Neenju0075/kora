@@ -8,7 +8,7 @@
       </div>
     </div>
     <%= link_to 'Delete', [answer.question, answer],
-                method: :delete, class: "button is-danger", data: { confirm: 'Are you sure?' } %>
+                method: :delete, class: "button is-danger", data: { confirm: 'Are you sure?' }  if session[:user_id] == answer.user_id%>
   </article>
 
 </div>

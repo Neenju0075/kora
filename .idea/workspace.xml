@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c29c03a-58cd-4725-be17-0bedd1057b76" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/kora.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kora.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/answers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/answers_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/answer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/answer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/question.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +34,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -151,7 +165,13 @@
       <workItem from="1577948772003" duration="16315000" />
       <workItem from="1577979241591" duration="928000" />
       <workItem from="1577985208610" duration="136000" />
-      <workItem from="1578031050737" duration="2752000" />
+      <workItem from="1578031050737" duration="4356000" />
+      <workItem from="1578060241349" duration="637000" />
+      <workItem from="1578135498367" duration="2534000" />
+      <workItem from="1578160220302" duration="239000" />
+      <workItem from="1578161517228" duration="26000" />
+      <workItem from="1578237104496" duration="6857000" />
+      <workItem from="1578289281949" duration="17270000" />
     </task>
     <servers />
   </component>
@@ -159,21 +179,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="262" key="GridCell.Tab.0.bottom" timestamp="1577948789250">
+    <state width="1638" height="261" key="GridCell.Tab.0.bottom" timestamp="1578237685708">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="262" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1577948789250" />
-    <state width="1638" height="262" key="GridCell.Tab.0.center" timestamp="1577948789249">
+    <state width="1638" height="261" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1578237685708" />
+    <state width="1638" height="261" key="GridCell.Tab.0.center" timestamp="1578237685707">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="262" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1577948789249" />
-    <state width="1638" height="262" key="GridCell.Tab.0.left" timestamp="1577948789249">
+    <state width="1638" height="261" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1578237685707" />
+    <state width="1638" height="261" key="GridCell.Tab.0.left" timestamp="1578237685706">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="262" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1577948789249" />
-    <state width="1638" height="262" key="GridCell.Tab.0.right" timestamp="1577948789249">
+    <state width="1638" height="261" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1578237685706" />
+    <state width="1638" height="261" key="GridCell.Tab.0.right" timestamp="1578237685707">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="262" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1577948789249" />
+    <state width="1638" height="261" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1578237685707" />
+    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1578244234532">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="505" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.972@0.23.1680.972" timestamp="1578244234532" />
   </component>
 </project>

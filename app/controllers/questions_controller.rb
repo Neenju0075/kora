@@ -1,17 +1,16 @@
 class QuestionsController < ApplicationController
 
-
   def index
-    @question = Question.all.order("created_at DESC")
+    @question = get_current_user.questions.order("created_at DESC")
   end
 
   def new
-    @question = Question.new
+    @question = get_current_user.questions.build
   end
 
 
   def create
-    @question = Question.new(post_params)
+    @question = get_current_user.questions.build(post_params)
 
     if @question.save
       redirect_to @question
@@ -50,6 +49,5 @@ class QuestionsController < ApplicationController
   def post_params
     params.require(:question).permit(:question)
   end
-
 
 end

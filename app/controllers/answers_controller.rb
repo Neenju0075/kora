@@ -2,7 +2,7 @@ class AnswersController < ApplicationController
 
   def create
     @question = Question.find(params[:question_id])
-    @answer = @question.answers.create(post_params)
+    @question.answers.create(post_params.merge({user_id: get_current_user.id}))
     redirect_to @question
 
   end

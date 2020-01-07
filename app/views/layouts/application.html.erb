@@ -22,8 +22,9 @@
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
-                <%= link_to "Create New Questions", new_question_path, class:"navbar-item" %>
-              </a>
+                <%= full_title(yield(:page_title))  %>
+                <span></span>
+                <%=link_to "logout", logout_url, method: :delete, data: { confirm: "Are you sure?" }, class:"button is-danger" if yield(:page_title).downcase.include? "question"  %>
             </div>
           </div>
         </div>
