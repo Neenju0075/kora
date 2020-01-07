@@ -30,8 +30,10 @@
 
 
     <div class="control">
+      <div class="level-left">
       <div class="radio">
       <%=f.input :role, as: :radio_buttons, :collection => [["user", 'user'], ["admin", 'admin']], :checked => ["user", 'user'], wrapper: false, label_html: { class: "radio" }%>
+      </div>
       </div>
     </div>
 

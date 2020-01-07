@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   end
 
   resources :users
-  resources :questions do
+    resources :questions do
     resources :answers
   end
 
