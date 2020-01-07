@@ -7,6 +7,22 @@ class AnswersController < ApplicationController
 
   end
 
+  def edit
+    @question = Question.find(params[:question_id])
+    @answer = @question.answers.find(params[:id])
+  end
+
+  def update
+    @question = Question.find(params[:question_id])
+    @answer = @question.answers.find(params[:id])
+
+    if @answer.update(post_params)
+      redirect_to @question
+    else
+      render 'answers/edit'
+    end
+  end
+
   def destroy
     @question = Question.find(params[:question_id])
     @answer = @question.answers.find(params[:id])

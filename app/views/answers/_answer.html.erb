@@ -7,8 +7,17 @@
         </p>
       </div>
     </div>
+    <% if session[:user_id] == answer.user_id %>
+    <div class="level-right">
+    <p class="level-item">
+    <%= link_to 'Edit', edit_question_answer_path(answer.question,answer), class: "button" %>
+    </p>
+    <p class="level-item">
     <%= link_to 'Delete', [answer.question, answer],
-                method: :delete, class: "button is-danger", data: { confirm: 'Are you sure?' }  if session[:user_id] == answer.user_id%>
+                method: :delete, class: "button is-danger", data: { confirm: 'Are you sure?' } %>
+    </p>
+    </div>
+    <% end %>
   </article>
 
 </div>
