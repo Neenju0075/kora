@@ -15,6 +15,11 @@
         <p class="title is-4"><%= @user.name %></p>
         <p class="subtitle is-6"><%= @user.email %></p>
       </div>
+      <div class ="level-right">
+      <div class="media-content">
+        <%= link_to 'Delete my profile', @user, method: :delete, data: { confirm: 'The user related posts will also gets deleted, Are you sure?' }, class:"button is-danger" if session[:user_id] == @user.id%>
+      </div>
+      </div>
     </div>
 <!--
     <div class="content">

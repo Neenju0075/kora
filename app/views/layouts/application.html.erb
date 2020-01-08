@@ -13,7 +13,7 @@
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <%= link_to 'KORA', root_path , class: "navbar-item" %>
+            <%= link_to 'KORA - HomePage', root_path , class: "navbar-item" %>
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
@@ -39,7 +39,7 @@
     </div>
   </div>
     <div class="navbar-item" >
-      <h3><%= "Welcome " + $current_user.name + "!!!!"  unless $current_user==nil %></h3>
+      <h3><%= "Welcome " + $current_user.name + "!!!!"  unless yield(:page_title).downcase == "login" || "signup"  %></h3>
     </div>
 </section>
 <%= yield %>
