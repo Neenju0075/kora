@@ -1,5 +1,5 @@
 <% content_for :page_title,  "Question" %>
-<% if session[:user_id] == @question.user_id %>
+<% if admin? || session[:user_id] == @question.user_id %>
 <section class="section">
   <div class="container">
     <nav class="level">
