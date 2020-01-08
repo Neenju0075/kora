@@ -15,4 +15,10 @@ class ApplicationController < ActionController::Base
   def get_current_user
     User.find_by(id:session[:user_id])
   end
+
+  helper_method :admin?
+  def admin?
+    get_current_user.role == "admin"
+  end
+
 end

@@ -13,19 +13,18 @@
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <%= link_to 'KORA', root_path, class: "navbar-item" %>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-	            <span></span>
-	            <span></span>
-	            <span></span>
-	          </span>
+            <%= link_to 'KORA', root_path , class: "navbar-item" %>
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
+                <%= link_to "Users Page", users_path, class:"navbar-item" unless yield(:page_title).include? "Users page!!" %>
+                <span></span>
                 <%= full_title(yield(:page_title))  %>
                 <span></span>
+              <div class="level-right">
                 <%=link_to "logout", logout_url, method: :delete, data: { confirm: "Are you sure?" }, class:"button is-danger" if yield(:page_title).downcase.include? "question"  %>
-            </div>
+              </div>
+              </div>
           </div>
         </div>
       </nav>
@@ -39,6 +38,9 @@
       </h1>
     </div>
   </div>
+    <div class="navbar-item" >
+      <h3><%= "Welcome " + $current_user.name + "!!!!"  unless $current_user==nil %></h3>
+    </div>
 </section>
 <%= yield %>
 

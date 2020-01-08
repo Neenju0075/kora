@@ -1,0 +1,14 @@
+<div class="section">
+  <div class="container">
+    <% @question.each do |q| %>
+      <div class="card">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-5  "><%= link_to q.question , q  %></p>
+          </div>
+          <hr />
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
