@@ -39,7 +39,7 @@
     </div>
   </div>
     <div class="navbar-item" >
-      <h3><%= "Welcome " + $current_user.name + "!!!!"  unless ( (yield(:page_title).downcase.include? "login") || (yield(:page_title).downcase.include? "signup") )  %></h3>
+      <h3><%= "Welcome " + $current_user.name + "!!!!"  unless $current_user.nil? %></h3>
     </div>
 </section>
 <%= yield %>
