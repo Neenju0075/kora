@@ -7,25 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <section class="hero is-primary is-info">
+  <section class="hero is-dark">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
-            <%= link_to 'KORA - HomePage', root_path , class: "navbar-item" %>
+
           </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-item">
               <% if !current_user.nil? %>
-                  <%= link_to (current_user.name.capitalize + " Profile"), current_user, class:"navbar-item" %>
-                  <span></span>
-                  <%= link_to "Other Users", users_path, class:"navbar-item" %>
-                  <span></span>
-                  <%= link_to "Create New Questions", new_question_path, class:"navbar-item" %>
-                  <span></span>
-                  <div class="level-right">
-                    <%=link_to "logout", logout_url, method: :delete, data: { confirm: "Are you sure?" }, class:"button is-danger" %>
-                </div>
+
+                    <%=link_to "logout", logout_url, method: :delete, data: { confirm: "Are you sure?" }, class:"button is-danger is-light is-pulled-right" %>
               <%else %>
                   <span></span>
                   <%= full_title(yield(:page_title))  %>
@@ -35,11 +28,37 @@
           </div>
       </nav>
     </div>
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        <%= yield :page_title %>
-      </h1>
+
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <b class="title">
+          <%= yield :page_title %>
+        </b>
+      </div>
+    </div>
+
+
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <% if !current_user.nil? %>
+          <ul>
+            <li class="is-active">
+              <%= link_to 'KORA - HomePage', root_path , class: "navbar-item" %>
+            </li>
+            <li>
+              <%= link_to (current_user.name.capitalize + " Profile"), current_user, class:"navbar-item" %>
+            </li>
+            <li>
+              <%= link_to "Other Users", users_path, class:"navbar-item" %>
+            </li>
+            <li>
+              <%= link_to "Create New Questions", new_question_path, class:"navbar-item" %>
+            </li>
+          </ul>
+          <% end %>
+        </div>
+      </nav>
     </div>
   </div>
 

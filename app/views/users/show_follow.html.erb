@@ -1,24 +1,12 @@
 <% provide(:title, @title) %>
 <div class="row">
   <aside class="span4">
-    <section>
-
-      <h1><%= @user.name %></h1>
-      <span><%= link_to "view my profile", @user %></span>
-      <span><b>Questions Posted:</b> <%= @user.questions.count %></span>
-    </section>
-    <section>
-      <% if @users.any? %>
-        <div class="user_avatars">
-          <% @users.each do |user| %>
-            <%= link_to user.name, user %>
-          <% end %>
-        </div>
-      <% end %>
+    <section class="content">
+      <div><%= link_to "Back", @user, class: "button is-link is-outlined" %></div>
     </section>
   </aside>
   <div class="span8">
-    <h3><%= @title %></h3>
+    <span><b><%= @title %></b></span>
     <% if @users.any? %>
       <ul class="users">
         <%= render @users %>
@@ -26,3 +14,4 @@
     <% end %>
   </div>
 </div>
+

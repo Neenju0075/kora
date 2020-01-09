@@ -39,6 +39,8 @@ class User < ActiveRecord::Base
 
   private
   def clear_the_session
+    if @user == $current_user
     $current_user = nil
+    end
   end
 end
