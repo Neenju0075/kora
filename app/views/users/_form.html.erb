@@ -4,14 +4,16 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
+
     <div class="field">
       <div class="control">
         <%= f.input :name, required: true, autofocus: true, input_html: { class:"input" }, wrapper: false, label_html: { class:"label" } %>
       </div>
     </div>
+
     <div class="field">
       <div class="control">
-        <%= f.input :password, required: true, input_html: { class:"input" }, wrapper: false, label_html: { class:"label" }, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+        <%= f.input :password, required: true, input_html: { class:"input" }, wrapper: false, label_html: { class:"label" } %>
       </div>
     </div>
 
@@ -20,26 +22,21 @@
         <%= f.input :password_confirmation, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" } %>
       </div>
     </div>
-  </div>
 
-  <div class="field">
-    <div class="control">
-      <%= f.input :email, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" } %>
-    </div>
-  </div>
-
-
-    <div class="control">
-      <div class="level-left">
-      <div class="radio">
-      <%=f.input :role, as: :radio_buttons, :collection => [["user", 'user'], ["admin", 'admin']], :checked => ["user", 'user'], wrapper: false, label_html: { class: "radio" }%>
-      </div>
+    <div class="field">
+      <div class="control">
+        <%= f.input :email, required: true, input_html: { class: "input" }, wrapper: false, label_html: { class: "label" } %>
       </div>
     </div>
+
+    <div class="field">
+      <div class="control">
+          <%=f.input :role, as: :radio_buttons, :collection => [["user", 'user'], ["admin", 'admin']], :checked => ["user", 'user'], wrapper: false, label_html: { class: "radio" }%>
+      </div>
+    </div>
+
+      <div class="form-actions">
+        <%= f.button :submit, class: "button is-success is-outlined" %>
+      </div>
   </div>
- <div class="box">
-  <div class="form-actions">
-    <%= f.button :submit, class: "button is-primary" %>
-  </div>
- </div>
 <% end %>

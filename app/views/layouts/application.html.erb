@@ -7,40 +7,78 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <section class="hero is-primary is-info">
+  <section class="hero is-dark">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <%= link_to 'KORA - HomePage', root_path , class: "navbar-item" %>
+      <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+          <div class="navbar-item">
+          <h1 class="title">
+            KORA
+          </h1>
           </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-                <%= link_to "Users Page", users_path, class:"navbar-item" unless yield(:page_title).include? "Users page!!" %>
-                <span></span>
-                <%= full_title(yield(:page_title))  %>
-                <span></span>
-              <div class="level-right">
-                <%=link_to "logout", logout_url, method: :delete, data: { confirm: "Are you sure?" }, class:"button is-danger" if yield(:page_title).downcase.include? "question"  %>
-              </div>
-              </div>
+          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
+
+        <div class="container">
+
+          </div>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-item">
+              <% if !current_user.nil? %>
+
+                    <%=link_to "logout", logout_url, method: :delete, data: { confirm: "Are you sure?" }, class:"button is-danger is-light is-pulled-right" %>
+              <%else %>
+                  <span></span>
+                  <%= full_title(yield(:page_title))  %>
+                  <span></span>
+                <%end %>
+              </div>
+          </div>
       </nav>
     </div>
 
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <b class="title">
+          <%= yield :page_title %>
+        </b>
+      </div>
+    </div>
 
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        <%= yield :page_title %>
-      </h1>
+
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <% if !current_user.nil? %>
+          <ul>
+            <li>
+              <%= link_to 'KORA - HomePage', root_path , class: "navbar-item is-active" if yield(:page_title).downcase.include? "questions index" %>
+              <%= link_to 'KORA - HomePage', root_path , class: "navbar-item" unless yield(:page_title).downcase.include? "questions index"%>
+            </li>
+            <li>
+              <%= link_to (current_user.name.capitalize + " Profile"), current_user, class:"navbar-item is-active" if yield(:page_title).downcase.include? "profile" %>
+              <%= link_to (current_user.name.capitalize + " Profile"), current_user, class:"navbar-item" unless yield(:page_title).downcase.include? "profile" %>
+            </li>
+            <li>
+              <%= link_to "Other Users", users_path,  class:"navbar-item is-active" if yield(:page_title).downcase.include? "users page" %>
+              <%= link_to "Other Users", users_path,  class:"navbar-item" unless yield(:page_title).downcase.include? "users page" %>
+            </li>
+            <li>
+              <%= link_to "Create New Questions", new_question_path, class:"navbar-item is-active" if yield(:page_title).downcase.include? "new question" %>
+              <%= link_to "Create New Questions", new_question_path, class:"navbar-item" unless yield(:page_title).downcase.include? "new question" %>
+            </li>
+          </ul>
+          <% end %>
+        </div>
+      </nav>
     </div>
   </div>
-    <div class="navbar-item" >
-      <h3><%= "Welcome " + $current_user.name + "!!!!"  unless $current_user.nil? %></h3>
-    </div>
+
 </section>
 <%= yield %>
 
