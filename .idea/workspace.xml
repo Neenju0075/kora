@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c29c03a-58cd-4725-be17-0bedd1057b76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/relationships/destroy.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/_user.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/show_follow.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kora.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kora.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/answer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/answer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/question.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-    </list>
+    <list default="true" id="4c29c03a-58cd-4725-be17-0bedd1057b76" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +163,7 @@
       <workItem from="1578161517228" duration="26000" />
       <workItem from="1578237104496" duration="6857000" />
       <workItem from="1578289281949" duration="17270000" />
-      <workItem from="1578546729210" duration="4967000" />
+      <workItem from="1578546729210" duration="5312000" />
     </task>
     <servers />
   </component>
