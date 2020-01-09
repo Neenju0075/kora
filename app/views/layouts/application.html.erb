@@ -10,7 +10,20 @@
   <section class="hero is-dark">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
-      <nav class="navbar">
+      <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+          <div class="navbar-item">
+          <h1 class="title">
+            KORA
+          </h1>
+          </div>
+          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
         <div class="container">
 
           </div>
@@ -43,17 +56,21 @@
         <div class="container">
           <% if !current_user.nil? %>
           <ul>
-            <li class="is-active">
-              <%= link_to 'KORA - HomePage', root_path , class: "navbar-item" %>
+            <li>
+              <%= link_to 'KORA - HomePage', root_path , class: "navbar-item is-active" if yield(:page_title).downcase.include? "questions index" %>
+              <%= link_to 'KORA - HomePage', root_path , class: "navbar-item" unless yield(:page_title).downcase.include? "questions index"%>
             </li>
             <li>
-              <%= link_to (current_user.name.capitalize + " Profile"), current_user, class:"navbar-item" %>
+              <%= link_to (current_user.name.capitalize + " Profile"), current_user, class:"navbar-item is-active" if yield(:page_title).downcase.include? "profile" %>
+              <%= link_to (current_user.name.capitalize + " Profile"), current_user, class:"navbar-item" unless yield(:page_title).downcase.include? "profile" %>
             </li>
             <li>
-              <%= link_to "Other Users", users_path, class:"navbar-item" %>
+              <%= link_to "Other Users", users_path,  class:"navbar-item is-active" if yield(:page_title).downcase.include? "users page" %>
+              <%= link_to "Other Users", users_path,  class:"navbar-item" unless yield(:page_title).downcase.include? "users page" %>
             </li>
             <li>
-              <%= link_to "Create New Questions", new_question_path, class:"navbar-item" %>
+              <%= link_to "Create New Questions", new_question_path, class:"navbar-item is-active" if yield(:page_title).downcase.include? "new question" %>
+              <%= link_to "Create New Questions", new_question_path, class:"navbar-item" unless yield(:page_title).downcase.include? "new question" %>
             </li>
           </ul>
           <% end %>

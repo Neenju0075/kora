@@ -20,10 +20,10 @@
           <div class="level-right">
             <% if admin? %>
           <p class="level-item">
-            <%= link_to 'Edit', edit_user_path(user), class:"button" %>
+            <%= link_to 'Edit', edit_user_path(user), class:"button is-link is-outlined" %>
           </p>
           <p class="level-item">
-            <%= link_to 'Delete User', user, method: :delete, data: { confirm: 'The user related posts will also gets deleted, Are you sure?' }, class:"button is-danger" %>
+            <%= link_to 'Delete User', user, method: :delete, data: { confirm: 'The user related posts will also gets deleted, Are you sure?' }, class:"button is-danger is-outlined" %>
             <% end %>
           </div>
           <hr />
