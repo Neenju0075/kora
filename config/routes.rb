@@ -12,9 +12,16 @@ Rails.application.routes.draw do
     delete 'logout' => :destroy
   end
 
+  resources :relationships, only: [:create, :destroy]
   resources :users
-    resources :questions do
+  resources :questions do
     resources :answers
+  end
+
+  resources :users do
+    member do
+      get :following, :followers
+    end
   end
 
   root "questions#index"

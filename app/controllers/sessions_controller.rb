@@ -12,7 +12,8 @@ class SessionsController < ApplicationController
       $current_user = user
       redirect_to questions_path
     else
-      redirect_to login_url, alert:"Invalid username or password"
+      flash.now[:error] = 'Invalid email/password combination'
+      render 'new'
     end
   end
 
