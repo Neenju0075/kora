@@ -9,6 +9,7 @@
     <div class="container">
 
     <% @users.each do |user| %>
+        <% unless current_user?(user) %>
       <div class="card">
         <div class="media">
           <div class="media-content">
@@ -28,6 +29,7 @@
           <hr />
         </div>
       </div>
+          <% end %>
     <% end %>
     </div>
   </div>

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c29c03a-58cd-4725-be17-0bedd1057b76" name="Default Changelist" comment="" />
+    <list default="true" id="4c29c03a-58cd-4725-be17-0bedd1057b76" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/answers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/answers_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +170,7 @@
       <workItem from="1578161517228" duration="26000" />
       <workItem from="1578237104496" duration="6857000" />
       <workItem from="1578289281949" duration="17270000" />
-      <workItem from="1578546729210" duration="5312000" />
+      <workItem from="1578546729210" duration="16626000" />
     </task>
     <servers />
   </component>
@@ -171,62 +178,70 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="819" height="261" key="GridCell.Tab.0.bottom" timestamp="1578547041001">
+    <state x="549" y="134" key="#Development:_kora" timestamp="1578574309498">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="819" height="261" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1578547041001" />
-    <state width="819" height="261" key="GridCell.Tab.0.center" timestamp="1578547040999">
+    <state x="549" y="134" key="#Development:_kora/0.23.1680.972@0.23.1680.972" timestamp="1578574309498" />
+    <state x="304" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578574454658">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="819" height="261" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1578547040999" />
-    <state width="819" height="261" key="GridCell.Tab.0.left" timestamp="1578547040999">
+    <state x="304" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.972@0.23.1680.972" timestamp="1578574454658" />
+    <state width="819" height="292" key="GridCell.Tab.0.bottom" timestamp="1578577184013">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="819" height="261" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1578547040999" />
-    <state width="819" height="261" key="GridCell.Tab.0.right" timestamp="1578547041000">
+    <state width="819" height="292" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1578577184013" />
+    <state width="819" height="292" key="GridCell.Tab.0.center" timestamp="1578577184012">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="819" height="261" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1578547041000" />
-    <state width="1638" height="323" key="GridCell.Tab.1.bottom" timestamp="1578512415277">
+    <state width="819" height="292" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1578577184012" />
+    <state width="819" height="292" key="GridCell.Tab.0.left" timestamp="1578577184011">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="323" key="GridCell.Tab.1.bottom/0.23.1680.972@0.23.1680.972" timestamp="1578512415277" />
-    <state width="1638" height="323" key="GridCell.Tab.1.center" timestamp="1578512415277">
+    <state width="819" height="292" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1578577184011" />
+    <state width="819" height="292" key="GridCell.Tab.0.right" timestamp="1578577184013">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="323" key="GridCell.Tab.1.center/0.23.1680.972@0.23.1680.972" timestamp="1578512415277" />
-    <state width="1638" height="323" key="GridCell.Tab.1.left" timestamp="1578512415276">
+    <state width="819" height="292" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1578577184013" />
+    <state width="819" height="292" key="GridCell.Tab.1.bottom" timestamp="1578577186823">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="323" key="GridCell.Tab.1.left/0.23.1680.972@0.23.1680.972" timestamp="1578512415276" />
-    <state width="1638" height="323" key="GridCell.Tab.1.right" timestamp="1578512415277">
+    <state width="819" height="292" key="GridCell.Tab.1.bottom/0.23.1680.972@0.23.1680.972" timestamp="1578577186823" />
+    <state width="819" height="292" key="GridCell.Tab.1.center" timestamp="1578577186822">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="323" key="GridCell.Tab.1.right/0.23.1680.972@0.23.1680.972" timestamp="1578512415277" />
-    <state width="1638" height="323" key="GridCell.Tab.2.bottom" timestamp="1578512415277">
+    <state width="819" height="292" key="GridCell.Tab.1.center/0.23.1680.972@0.23.1680.972" timestamp="1578577186822" />
+    <state width="819" height="292" key="GridCell.Tab.1.left" timestamp="1578577186821">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="323" key="GridCell.Tab.2.bottom/0.23.1680.972@0.23.1680.972" timestamp="1578512415277" />
-    <state width="1638" height="323" key="GridCell.Tab.2.center" timestamp="1578512415277">
+    <state width="819" height="292" key="GridCell.Tab.1.left/0.23.1680.972@0.23.1680.972" timestamp="1578577186821" />
+    <state width="819" height="292" key="GridCell.Tab.1.right" timestamp="1578577186822">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="323" key="GridCell.Tab.2.center/0.23.1680.972@0.23.1680.972" timestamp="1578512415277" />
-    <state width="1638" height="323" key="GridCell.Tab.2.left" timestamp="1578512415277">
+    <state width="819" height="292" key="GridCell.Tab.1.right/0.23.1680.972@0.23.1680.972" timestamp="1578577186822" />
+    <state width="819" height="292" key="GridCell.Tab.2.bottom" timestamp="1578577185700">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="323" key="GridCell.Tab.2.left/0.23.1680.972@0.23.1680.972" timestamp="1578512415277" />
-    <state width="1638" height="323" key="GridCell.Tab.2.right" timestamp="1578512415277">
+    <state width="819" height="292" key="GridCell.Tab.2.bottom/0.23.1680.972@0.23.1680.972" timestamp="1578577185700" />
+    <state width="819" height="292" key="GridCell.Tab.2.center" timestamp="1578577185699">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="323" key="GridCell.Tab.2.right/0.23.1680.972@0.23.1680.972" timestamp="1578512415277" />
+    <state width="819" height="292" key="GridCell.Tab.2.center/0.23.1680.972@0.23.1680.972" timestamp="1578577185699" />
+    <state width="819" height="292" key="GridCell.Tab.2.left" timestamp="1578577185699">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state width="819" height="292" key="GridCell.Tab.2.left/0.23.1680.972@0.23.1680.972" timestamp="1578577185699" />
+    <state width="819" height="292" key="GridCell.Tab.2.right" timestamp="1578577185700">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state width="819" height="292" key="GridCell.Tab.2.right/0.23.1680.972@0.23.1680.972" timestamp="1578577185700" />
     <state x="349" y="148" key="SettingsEditor" timestamp="1578553361830">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="349" y="148" key="SettingsEditor/0.23.1680.972@0.23.1680.972" timestamp="1578553361830" />
-    <state x="392" y="252" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578378174764">
+    <state x="392" y="252" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578574541446">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state x="392" y="252" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1680.972@0.23.1680.972" timestamp="1578378174764" />
+    <state x="392" y="252" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1680.972@0.23.1680.972" timestamp="1578574541446" />
     <state x="100" y="123" width="1480" height="772" key="dock-window-1" timestamp="1578492968038">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
@@ -236,7 +251,21 @@
     </state>
     <state x="505" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.972@0.23.1680.972" timestamp="1578474525404" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/questions_controller.rb</url>
+          <line>29</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/kora@Development__kora.rcov" NAME="Development: kora Coverage Results" MODIFIED="1578378040817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kora" />
+    <SUITE FILE_PATH="coverage/kora@Development__kora.rcov" NAME="Development: kora Coverage Results" MODIFIED="1578576495298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="kora" />
   </component>
 </project>
