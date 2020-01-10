@@ -9,6 +9,11 @@
           <strong>Actions</strong>
         </p>
       </div>
+      <div class="level-item">
+        <% if flash[:notice] %>
+          <p class="notice"><%= flash[:notice] %></p>
+        <% end %>
+      </div>
       <!-- Right side -->
       <div class="level-right">
         <p class="level-item">
