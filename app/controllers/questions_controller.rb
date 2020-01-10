@@ -14,6 +14,9 @@ class QuestionsController < ApplicationController
     @question = get_current_user.questions.build(post_params)
 
     if @question.save
+      get_current_user.followers.each do |user|
+        UserMailer.new_question_email(user.email, @question).deliver_later
+      end
       flash[:notice]  = 'Question created!!!'
       redirect_to @question
     else
