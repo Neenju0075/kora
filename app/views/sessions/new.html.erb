@@ -1,11 +1,9 @@
 <% content_for :page_title,  "Login" %>
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
 <%= form_tag do %>
 <div class="box">
-    <% if alert %>
-      <p id="alert">
-        <% alert %>
-      </p>
-    <% end %>
   <div class="form-inputs">
     <div class="field">
       <div class="control">

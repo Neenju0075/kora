@@ -12,14 +12,15 @@ class SessionsController < ApplicationController
       $current_user = user
       redirect_to questions_path
     else
-      flash.now[:error] = 'Invalid email/password combination'
-      render 'new'
+      flash[:notice]  = 'Invalid email/password combination'
+      redirect_to login_path
     end
   end
 
   def destroy
     session[:user_id] = nil
     $current_user = nil
-    redirect_to login_url, alert:"Successfully logout"
+    flash[:notice] ="Successfully logged out!!!!"
+    redirect_to login_url
   end
 end

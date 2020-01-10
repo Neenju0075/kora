@@ -4,6 +4,7 @@ class AnswersController < ApplicationController
 
   def create
     @question.answers.create(post_params.merge({user_id: get_current_user.id}))
+    flash[:notice]  = 'New answer posted!!!'
     redirect_to @question
   end
 
@@ -12,6 +13,7 @@ class AnswersController < ApplicationController
 
   def update
     if @answer.update(post_params)
+      flash[:notice]  = "( #{@answer.answer} ) Updated!!!!!"
       redirect_to @question
     else
       render 'answers/edit'
@@ -20,6 +22,7 @@ class AnswersController < ApplicationController
 
   def destroy
     @answer.destroy
+    flash[:notice]  = "( #{@answer.answer} ) Deleted!!!!"
     redirect_to @question
   end
 

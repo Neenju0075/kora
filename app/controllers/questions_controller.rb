@@ -14,6 +14,7 @@ class QuestionsController < ApplicationController
     @question = get_current_user.questions.build(post_params)
 
     if @question.save
+      flash[:notice]  = 'Question created!!!'
       redirect_to @question
     else
       render 'new'
@@ -28,6 +29,7 @@ class QuestionsController < ApplicationController
 
   def update
     if @question.update(post_params)
+      flash[:notice]  = 'Question Updated!!'
       redirect_to @question
     else
       render 'edit'
@@ -36,6 +38,7 @@ class QuestionsController < ApplicationController
 
   def destroy
     @question.destroy
+    flash[:notice]  = 'Question successfully deleted!!!'
     redirect_to questions_path
   end
 
@@ -45,7 +48,7 @@ class QuestionsController < ApplicationController
   end
 
   def post_params
-    params.require(:question).permit(:question)
+    params.require(:question).permit(:question,:id)
   end
 
   def update_params
