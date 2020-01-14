@@ -19,7 +19,7 @@
         <p class="subtitle is-6">
           <a href="<%= following_user_path(@user) %>">
             <strong>
-              <%= @user.followed_users.count %>
+              <%= @user.followed_users.where('softDelete = false').count %>
             </strong>
             following
           </a>
@@ -27,7 +27,7 @@
         <p class="subtitle is-6">
           <a href="<%= followers_user_path(@user) %>">
             <strong>
-              <%= @user.followers.count %>
+              <%= @user.followers.where('softDelete = false').count %>
             </strong>
             followers
           </a>
