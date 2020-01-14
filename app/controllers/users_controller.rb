@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy, :following,:followers]
+  before_action :set_user, only: [:show, :edit, :update, :destroy, :following, :followers,:delete_follow]
   skip_before_action :authorize, only: [:new, :create]
 
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.all.where('softDelete = false')
   end
 
   # GET /users/1
@@ -55,6 +55,23 @@ class UsersController < ApplicationController
     end
   end
 
+  def delete_follow
+    if params[:title].downcase == "following"
+      @user.followed_users.each do |u|
+        u.update_column(:softDelete, true)
+      end
+    elsif params[:title].downcase == "followers"
+      @user.followers.each do |u|
+        u.update_column(:softDelete, true)
+      end
+    end
+    UserDeleteWorker.perform_async(params[:id],params[:title])
+    respond_to do |format|
+      format.html { redirect_to user_path, notice: 'Users was successfully destroyed!!' }
+      format.json { head :no_content }
+    end
+  end
+
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
@@ -78,13 +95,13 @@ class UsersController < ApplicationController
 
   def following
     @title = "Following"
-    @users = @user.followed_users
+    @users = @user.followed_users.where('softDelete = false')
     render 'show_follow'
   end
 
   def followers
     @title = "Followers"
-    @users = @user.followers
+    @users = @user.followers.where('softDelete = false')
     render 'show_follow'
   end
 

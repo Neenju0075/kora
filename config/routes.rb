@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   #get 'sessions/destroy'
 
+  delete '/users/:id/delete_follow' => 'users#delete_follow', as: 'delete_follow'
+
   controller :sessions do
     get 'login' => :new
     post 'login' => :create
@@ -23,6 +25,9 @@ Rails.application.routes.draw do
       get :following, :followers
     end
   end
+
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 
   root "questions#index"
 

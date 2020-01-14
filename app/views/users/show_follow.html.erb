@@ -4,14 +4,23 @@
     <section class="content">
       <div><%= link_to "Back", @user, class: "button is-link is-outlined" %></div>
     </section>
+    <section class="content">
+      <% if admin? %>
+      <div><%= link_to ('Delete all ' + @title.downcase + ' users'), delete_follow_path(:params => params, :title => @title ), method: 'delete', :controller => "users_controller", :action => "destroy", data: { confirm: 'The user related posts will also gets deleted, Are you sure?' }, class:"button is-danger is-outlined" if session[:user_id] == @user.id%></div>
+      <%end %>
+    </section>
   </aside>
+  <section class="content">
   <div class="span8">
+    <section class="content">
     <span><b><%= @title %></b></span>
+    </section>
     <% if @users.any? %>
       <ul class="users">
         <%= render @users %>
       </ul>
     <% end %>
   </div>
+  </section>
 </div>
 
